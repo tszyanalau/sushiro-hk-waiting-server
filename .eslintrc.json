@@ -1,0 +1,37 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true,
+    "jest/globals": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:json/recommended",
+    "airbnb-base"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "plugins": [
+    "jest",
+    "json"
+  ],
+  "globals": {
+    "logger": "readonly"
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "max-len": 0,
+    "object-curly-newline": 0,
+    "global-require": 0,
+    "import/no-dynamic-require": 0,
+    "no-param-reassign": 0,
+    "no-shadow": 0,
+    "no-global-assign": 0,
+    "no-await-in-loop": 0,
+    "no-plusplus": 0
+  }
+}

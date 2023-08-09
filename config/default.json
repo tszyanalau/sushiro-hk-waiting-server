@@ -1,0 +1,9 @@
+{
+  "mockData": false,
+  "sushiroApi": {
+    "baseUrl": "https://sushipass.sushiro.com.hk/api/1.1"
+  },
+  "loggerLevel": "info",
+  "apiWhitelist": [
+  ]
+}
