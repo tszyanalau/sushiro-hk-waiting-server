@@ -1,6 +1,10 @@
 {
   "mockData": false,
-  "apiWhitelist": [
-    "http://sushiro-hk-waiting-client.s3-website-ap-northeast-1.amazonaws.com"
-  ]
+  "api": {
+    "whitelist": [
+      "http://sushirowaiting-map.tszyanalau.com",
+      "http://sushirowaiting-map.tszyanalau.com.s3-website-ap-northeast-1.amazonaws.com"
+    ],
+    "baseUrl": "https://sushirowaiting.tszyanalau.com"
+  }
 }
