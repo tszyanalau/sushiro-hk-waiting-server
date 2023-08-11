@@ -1,4 +1,6 @@
 const request = require('supertest');
+const nock = require('nock');
+const config = require('config');
 const app = require('../app');
 
 describe('Test for store API', () => {
@@ -33,5 +35,25 @@ describe('Test for store API', () => {
         expect(res.body).toHaveProperty('timestamp', expect.any(Number));
       })
       .expect(200, done);
+  });
+
+  test('Get store list error', (done) => {
+    nock(`${config.get('sushiroApi.baseUrl')}`)
+      .get('/info/storelist')
+      .reply(200, []);
+    request(app)
+      .get('/api/store')
+      .set('x-api-key', process.env.API_KEY)
+      .expect((res) => {
+        expect(res.body).toEqual({
+          errors: [{
+            value: [],
+            msg: 'Invalid value',
+            param: 'stores',
+            location: 'body',
+          }],
+        });
+      })
+      .expect(400, done);
   });
 });
