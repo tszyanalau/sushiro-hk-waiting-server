@@ -1,0 +1,8 @@
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+.git
+.gitignore
+temp/*
+node_modules
+# .env
+.husky

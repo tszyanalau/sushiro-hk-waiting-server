@@ -1,0 +1,10 @@
+{
+  "mockData": true,
+  "loggerLevel": "debug",
+  "api": {
+    "baseUrl": "http://localhost:8080",
+    "whitelist": [
+      "http://localhost:3000"
+    ]
+  }
+}
