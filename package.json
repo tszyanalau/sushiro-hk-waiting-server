@@ -1,6 +1,6 @@
 {
   "name": "sushiro-hk-waiting-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -38,10 +38,10 @@
     "jest": "^29.3.1",
     "jest-environment-jsdom": "^29.3.1",
     "nock": "^13.3.2",
-    "nodemon": "^2.0.20",
+    "nodemon": "^3.0.1",
     "supertest": "^6.3.1"
   },
   "engines": {
-    "node": "14.19.0"
+    "node": "18.17.1"
   }
 }
