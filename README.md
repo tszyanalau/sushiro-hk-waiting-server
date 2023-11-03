@@ -28,7 +28,7 @@ The Sushiro HK Waiting Groups App API Server is a Node.js application that serve
 
 Before you begin, ensure you have the following installed:
 
-- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [Node.js](https://nodejs.org/) (version 18 or higher)
 - [npm](https://www.npmjs.com/) (normally comes with Node.js installation)
 - [Docker](https://www.docker.com/)
 
