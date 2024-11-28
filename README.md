@@ -16,10 +16,6 @@ The Sushiro HK Waiting Groups App API Server is a Node.js application that serve
   - [Testing](#testing)
     - [Lint Tests with ESLint](#lint-tests-with-eslint)
     - [Unit Tests with Jest](#unit-tests-with-jest)
-  - [Deployment](#deployment)
-    - [Continuous Integration and Continuous Deployment (CI/CD)](#continuous-integration-and-continuous-deployment-cicd)
-    - [AWS CodePipeline Configuration](#aws-codepipeline-configuration)
-    - [Build Specification](#build-specification)
   - [Available Scripts](#available-scripts)
 
 ## Getting Started
@@ -104,29 +100,6 @@ The tests are written using the Jest framework and can be found in the `__tests_
 ```bash
 npm run jest
 ```
-
-## Deployment
-
-### Continuous Integration and Continuous Deployment (CI/CD)
-
-This project follows a CI/CD approach to ensure smooth and automated deployments. AWS CodePipeline is used to orchestrate the build, test, and deployment process.
-
-### AWS CodePipeline Configuration
-
-The CI/CD pipeline is configured as follows:
-
-1. **Source Stage (GitHub)**: Code changes are pushed to the GitHub repository, triggering the pipeline.
-
-2. **Build & Test Stage (CodeBuild)**: CodeBuild automatically builds the Docker image for the application, runs tests, and packages the artifacts.
-
-3. **Deployment Stage (CodeDeploy)**: After successful testing and build, the application artifacts are deployed to Elastic Beanstalk.
-
-### Build Specification
-
-The build stage of deployment process is configured in `buildspec.yml`, a collection of build commands and related settings that CodeBuild uses to run a build:
-
-- Running tests before building the application.
-- Building the Docker image for the application.
 
 ## Available Scripts
 
