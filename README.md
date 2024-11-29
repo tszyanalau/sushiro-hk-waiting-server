@@ -59,7 +59,7 @@ The Sushiro HK Waiting Groups App API Server is built using the following techno
 
 ## Environment Variables
 
-Before starting the server, make sure to configure the environment variables for the Sushiro HK Waiting Groups App. Copy the `env.example` file to `.env` and update the values.
+Before starting the server, make sure to configure the environment variables for the Sushiro HK Waiting Groups App. Copy the `env.example` file to `.env` and update the values. Make sure the API key is same as the one used in frontend.
 
 ```bash
 API_KEY=
@@ -81,7 +81,7 @@ The API server provides the following endpoint to retrieve store information for
 
 - `GET /store`: Fetches store information from the API of official Sushiro HK app.
 
-You can view the complete API documentation [here](https://sushirowaiting.tszyanalau.com/api-doc/).
+You can view the complete API documentation [http://localhost:8080/api-doc/](http://localhost:8080/api-doc/).
 
 ## Testing
 
