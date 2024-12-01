@@ -8,7 +8,6 @@
     "start-dev": "NODE_ENV=development node server.js",
     "start-dev:watch": "NODE_ENV=development nodemon server.js",
     "start-dev:docker": "docker build -t sushiro-hk-waiting-server . && docker run -e NODE_ENV=development -p 8080:8080 sushiro-hk-waiting-server",
-    "start-prod": "NODE_ENV=production node server.js",
     "lint": "eslint . --ext js",
     "jest": "jest",
     "test": "npm run lint && npm run jest",

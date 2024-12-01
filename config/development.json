@@ -1,5 +1,5 @@
 {
-  "mockData": true,
+  "mockData": false,
   "loggerLevel": "debug",
   "api": {
     "baseUrl": "http://localhost:8080",
