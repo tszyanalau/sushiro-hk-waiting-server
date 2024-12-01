@@ -110,7 +110,6 @@ In the project directory, you can run the following
 - `npm run start-dev`: Starts the API server in development environment.
 - `npm run start-dev:watch`: Starts the API server in development environment with automated restart when changes are made.
 - `npm run start-dev:docker`: Build the app in development environment with Docker and run on port 8080.
-- `npm run start-prod`: Starts the API server in production environment.
 - `npm run lint`: Runs linting tests using ESLint.
 - `npm run jest`: Runs the unit tests using Jest.
 - `npm run test`: Runs both linting and unit tests.
